@@ -5,9 +5,17 @@ VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.Api", "src\Linkinho.Api\Linkinho.Api.csproj", "{8D63B4FC-60A8-2C84-7058-D5963FEC71A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.AppHost", "Linkinho.AppHost\Linkinho.AppHost.csproj", "{A9201BCF-EA5A-4263-A215-8858E7402E8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.AppHost", "src\Linkinho.AppHost\Linkinho.AppHost.csproj", "{A9201BCF-EA5A-4263-A215-8858E7402E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.ServiceDefaults", "Linkinho.ServiceDefaults\Linkinho.ServiceDefaults.csproj", "{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.ServiceDefaults", "src\Linkinho.ServiceDefaults\Linkinho.ServiceDefaults.csproj", "{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{0D99464B-48D3-4052-81AD-2D6C97496E3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{731975C9-3449-4C53-9E6B-207FA455F770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.Domain", "src\Linkinho.Domain\Linkinho.Domain.csproj", "{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,19 @@ Global
 		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D63B4FC-60A8-2C84-7058-D5963FEC71A8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07} = {0D99464B-48D3-4052-81AD-2D6C97496E3C}
+		{0D99464B-48D3-4052-81AD-2D6C97496E3C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A} = {731975C9-3449-4C53-9E6B-207FA455F770}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE56B205-8ECE-4207-A2A6-40E11CDEAFD2}
