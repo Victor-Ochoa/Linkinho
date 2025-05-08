@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.Api", "src\Linkinho.Api\Linkinho.Api.csproj", "{8D63B4FC-60A8-2C84-7058-D5963FEC71A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.AppHost", "Linkinho.AppHost\Linkinho.AppHost.csproj", "{A9201BCF-EA5A-4263-A215-8858E7402E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.ServiceDefaults", "Linkinho.ServiceDefaults\Linkinho.ServiceDefaults.csproj", "{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D63B4FC-60A8-2C84-7058-D5963FEC71A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D63B4FC-60A8-2C84-7058-D5963FEC71A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D63B4FC-60A8-2C84-7058-D5963FEC71A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D63B4FC-60A8-2C84-7058-D5963FEC71A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9201BCF-EA5A-4263-A215-8858E7402E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9201BCF-EA5A-4263-A215-8858E7402E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9201BCF-EA5A-4263-A215-8858E7402E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9201BCF-EA5A-4263-A215-8858E7402E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
