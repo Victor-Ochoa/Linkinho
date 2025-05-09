@@ -1,5 +1,5 @@
-﻿using Linkinho.Domain.Core.Contracts.Base;
-using Linkinho.Domain.Core.Contracts.Service;
+﻿using Linkinho.Domain.Contracts.Service;
+using Linkinho.Domain.Core.Contracts;
 using Linkinho.Domain.Entities;
 
 namespace Linkinho.Domain.Services;
@@ -13,13 +13,13 @@ public class LinkService : ILinkService
         _linkRepository = linkRepository;
     }
 
-    public async Task CreateLink(string url)
+    public async Task<Link> CreateLink(string url)
     {
         if(string.IsNullOrEmpty(url))
             throw new ArgumentNullException(nameof(url));
 
         var link = new Link(url);
-        await _linkRepository.Create(link);
+        return await _linkRepository.Create(link);
     }
 
     public async Task<string> GetUrlToRedirect(string identificator)
