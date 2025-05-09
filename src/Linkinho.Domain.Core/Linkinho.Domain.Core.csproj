@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Linkinho.Domain.Core\Linkinho.Domain.Core.csproj" />
-  </ItemGroup>
-
 </Project>

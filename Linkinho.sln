@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{731975
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.Domain", "src\Linkinho.Domain\Linkinho.Domain.csproj", "{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linkinho.Domain.Core", "src\Linkinho.Domain.Core\Linkinho.Domain.Core.csproj", "{403C54D1-7847-45E1-BB27-7DA5911307EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403C54D1-7847-45E1-BB27-7DA5911307EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403C54D1-7847-45E1-BB27-7DA5911307EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403C54D1-7847-45E1-BB27-7DA5911307EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403C54D1-7847-45E1-BB27-7DA5911307EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{8FA7C840-FE3A-CF6D-62C3-360DD4108C07} = {0D99464B-48D3-4052-81AD-2D6C97496E3C}
 		{0D99464B-48D3-4052-81AD-2D6C97496E3C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{3B11D8E0-0CA1-4CA2-A9EF-6D6BA845AD5A} = {731975C9-3449-4C53-9E6B-207FA455F770}
+		{403C54D1-7847-45E1-BB27-7DA5911307EE} = {731975C9-3449-4C53-9E6B-207FA455F770}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE56B205-8ECE-4207-A2A6-40E11CDEAFD2}
