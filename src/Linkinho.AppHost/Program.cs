@@ -1,6 +1,6 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var sql = builder.AddSqlServer("sql-server-db-omg")
+var sql = builder.AddSqlServer("sql-server-db")
                  .WithLifetime(ContainerLifetime.Persistent);
 
 var db = sql.AddDatabase("database", "linkinho");
