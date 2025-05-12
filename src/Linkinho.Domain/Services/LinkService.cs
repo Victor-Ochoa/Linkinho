@@ -15,7 +15,7 @@ public class LinkService : ILinkService
 
     public async Task<Link> CreateLink(string url)
     {
-        if(string.IsNullOrEmpty(url))
+        if (string.IsNullOrEmpty(url))
             throw new ArgumentNullException(nameof(url));
 
         var link = new Link(url);
@@ -29,12 +29,31 @@ public class LinkService : ILinkService
 
         var link = await _linkRepository.Get(x => x.Identificator == identificator);
 
-        if(link is null)
+        if (link is null)
             return string.Empty;
 
         link.Click();
         await _linkRepository.Update(link);
 
         return link.Url;
+    }
+
+    public async Task<Link> GetLink(string identificator, bool countClick = true)
+    {
+        if (string.IsNullOrEmpty(identificator))
+            throw new ArgumentNullException(nameof(identificator));
+
+        var link = await _linkRepository.Get(x => x.Identificator == identificator);
+
+        if (link is null)
+            return null;
+
+        if (countClick)
+        {
+            link.Click();
+            await _linkRepository.Update(link);
+        }
+
+        return link;
     }
 }

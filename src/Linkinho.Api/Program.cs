@@ -48,7 +48,25 @@ app.MapGet("/{idLink:length(6)}", async ([FromRoute] string idLink, [FromService
 })
 .WithName("Redirect");
 
-app.MapPost("/RegisterNewRote", async ([FromBody] string idLink, [FromServices] ILinkService linkService) =>
+app.MapGet("/link/{idLink:length(6)}", async ([FromRoute] string idLink, [FromServices] ILinkService linkService) =>
+{
+    try
+    {
+        var link = await linkService.GetLink(idLink);
+
+        if (link is null)
+            return Results.NotFound();
+
+        return Results.Ok(link);
+    }
+    catch (Exception e)
+    {
+        return Results.BadRequest(e);
+    }
+})
+.WithName("GetLink");
+
+app.MapPost("/link", async ([FromBody] string idLink, [FromServices] ILinkService linkService) =>
 {
     try
     {
@@ -61,7 +79,7 @@ app.MapPost("/RegisterNewRote", async ([FromBody] string idLink, [FromServices] 
         return Results.BadRequest(e);
     }
 })
-.WithName("Register");
+.WithName("RegisterLink");
 
 app.Run();
 
